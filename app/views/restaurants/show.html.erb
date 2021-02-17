@@ -1,0 +1,16 @@
+
+<h1 class="display-3 text-center"><%= @restaurant.name %></h1>
+<h2 class="display-5 text-center"><%= @restaurant.category.capitalize %></h2>
+<h2 class="display-5 text-center"><%= @restaurant.address %></h2>
+<h2 class="display-5 text-center mb-4"><%= @restaurant.phone_number %></h2>
+
+<% @reviews.each do |review| %>
+<div class="card text-center mx-auto mb-4" id="rev">
+  <div class="card-body">
+
+    <h5 class="card-title">
+      <%=  '<i class="fas fa-star"></i>'.html_safe * review.rating %><%=  '<i class="far fa-star"></i>'.html_safe * (5 - review.rating) %>  </h5>
+    <p class="card-text"><%= review.content%></p>
+  </div>
+</div>
+<% end %>

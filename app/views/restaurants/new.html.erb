@@ -1,0 +1,33 @@
+<h1 class="display-1 text-center mb-5">Add new Restaurant</h1>
+<%= simple_form_for(@restaurant) do |f| %>
+<div id="container">
+<form>
+  <div class="mb-3">
+
+    <%= f.input :name %>
+  </div>
+  <div class="mb-3">
+    <%= f.input :address %>
+  </div>
+    <div class="mb-3">
+    <%= f.input :phone_number%>
+  </div>
+<div class=" mb-3">
+
+ <%= f.input :category, collection: Restaurant::CATEGORIES %>
+</div>
+  <%= f.submit :class => "btn btn-secondary newbtn" %>
+</form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+  <% end %>

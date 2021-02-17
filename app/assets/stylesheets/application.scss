@@ -1,1 +1,32 @@
 @import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+img {
+  height: 100px;
+  object-fit: cover;
+}
+
+#erest {
+  width: 800px;
+  margin-bottom: 40px;
+}
+
+#container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#revcon {
+  width: 425px;
+  margin-top: 70px;
+
+}
+
+.newbtn {
+  margin-left: 100px;
+}
+#rev {
+  width: 400px;
+}
